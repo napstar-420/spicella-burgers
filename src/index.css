@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.book_a_date {
+    z-index: 10;
+    overflow: hidden;
+}
+
+.book_a_date:hover::after {
+    width: 200%;
+}
+
+.book_a_date::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: -20%;
+    height: 100%;
+    width: 0%;
+    background-color: #D90000;
+    z-index: -1;
+    transition: all ease 0.5s;
+    -moz-transform: skew(54deg, 0deg);
+    -webkit-transform: skew(54deg, 0deg);
+    -o-transform: skew(54deg, 0deg);
+    -ms-transform: skew(54deg, 0deg);
+    transform: skew(54deg, 0deg);
+}
