@@ -83,19 +83,19 @@ function App() {
       <nav className="bg-black bg-opacity-30 md:bg-opacity-70 flex justify-center items-center h-screen w-14 md:w-20 fixed left-0 z-[999]">
         <ul className="flex -rotate-90 ">
           <button
-            className="border-2 border-yellow-500 text-yellow-500 px-4 py-1 rounded-full font-medium mx-2 hover:bg-yellow-500 hover:text-[#fff] transition-all cursor-pointer text-xs sm:text-base 2xl:text-2xl"
+            className={`border-2 border-yellow-500 px-4 py-1 rounded-full font-medium mx-2 hover:bg-yellow-500 hover:text-[#fff] transition-all cursor-pointer text-xs sm:text-base 2xl:text-2xl ${tab === tabs.reservation ? 'bg-yellow-500 text-white' : 'text-yellow-500'}`}
             onClick={() => setTab(tabs.reservation)}
           >
             Reservation
           </button>
           <button
-            className="border-2 border-yellow-500 text-yellow-500 px-4 py-1 rounded-full font-medium mx-2 hover:bg-yellow-500 hover:text-[#fff] transition-all cursor-pointer text-xs sm:text-base 2xl:text-2xl"
+            className={`border-2 border-yellow-500 px-4 py-1 rounded-full font-medium mx-2 hover:bg-yellow-500 hover:text-[#fff] transition-all cursor-pointer text-xs sm:text-base 2xl:text-2xl ${tab === tabs.menu ? 'bg-yellow-500 text-white' : 'text-yellow-500'}`}
             onClick={() => setTab(tabs.menu)}
           >
             Menu
           </button>
           <button
-            className="border-2 border-yellow-500 text-yellow-500 px-4 py-1 rounded-full font-medium mx-2 hover:bg-yellow-500 hover:text-[#fff] transition-all cursor-pointer text-xs sm:text-base 2xl:text-2xl"
+            className={`border-2 border-yellow-500 px-4 py-1 rounded-full font-medium mx-2 hover:bg-yellow-500 hover:text-[#fff] transition-all cursor-pointer text-xs sm:text-base 2xl:text-2xl ${tab === tabs.home ? 'bg-yellow-500 text-white' : 'text-yellow-500'}`}
             onClick={() => setTab(tabs.home)}
           >
             Home
