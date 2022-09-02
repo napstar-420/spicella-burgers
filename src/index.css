@@ -28,3 +28,22 @@
     -ms-transform: skew(54deg, 0deg);
     transform: skew(54deg, 0deg);
 }
+
+.menu_section {
+    position: relative;
+}
+
+.menu_section::after {
+    background: linear-gradient(90deg, rgba(234,179,8,1) 0%, rgba(255,226,0,0) 10%, rgba(251,216,2,0) 90%, rgba(234,179,8,1) 100%);
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-height: 660px ) and (min-width: 786px) {
+    .menu {
+        padding-top: 3rem;
+    }
+}

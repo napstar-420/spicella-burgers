@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         DMserif: ['DM Serif Display', 'serif'],
-        poppins: ['Poppins', 'sans-serif']
+        poppins: ['Poppins', 'sans-serif'],
+        lato: ['Lato', 'sans-serif']
       }
     },
   },
