@@ -47,3 +47,33 @@
         padding-top: 3rem;
     }
 }
+
+.form_control span {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    transition: all ease 0.3s;
+    background-color: #303030;
+    color: rgb(255, 255, 255, 70%);
+}
+
+.form_control input[type="text"]:focus + span, 
+.form_control input[type="number"]:focus + span, 
+.form_control input[type="email"]:focus + span, 
+.form_control input[type="text"]:not(:placeholder-shown) + span,
+.form_control input[type="number"]:not(:placeholder-shown) + span,
+.form_control input[type="email"]:not(:placeholder-shown) + span {
+    top: -10px;
+    font-size: 0.7rem;
+    padding: 0px 0.3rem;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+}
+
+.form_control input[type="date"] + span {
+    top: -10px;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.3rem;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+}
